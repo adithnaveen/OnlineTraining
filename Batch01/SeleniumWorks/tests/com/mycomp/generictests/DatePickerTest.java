@@ -115,6 +115,62 @@ public class DatePickerTest {
 	
 	
 	
+	// date picker registration
+	
+	@Test
+	public void datePickerRegForm() throws Exception {
+		driver.get(baseURL1);
+		
+		driver.findElement(By.id("travelfrom")).click();
+		Thread.sleep(2000);
+
+		String allDates =".//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr/td";
+		String currentDate ="//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr/td[contains(@class,' ui-datepicker-today')]";
+		// get the current date 
+		driver.findElement(By.xpath(currentDate)).click();
+		String getCurrentDate = driver.findElement(By.id("travelfrom")).getAttribute("value");
+		// in the format 08/07/2017 (MM/DD/YYYY) we have to change only the number i.e., DD 
+		System.out.println("Current Date got is " + getCurrentDate);
+		
+		driver.findElement(By.id("travelfrom")).click();
+
+		// getting all the dates
+		List<WebElement> allElements = driver.findElements(By.xpath(allDates));
+		List<String> allDateElementStringList = new ArrayList<String>();
+		
+		
+		for(WebElement temp : allElements){
+			System.out.println(temp.getText());
+			allDateElementStringList.add(temp.getText());
+		}
+		
+		
+		System.out.println("All Elements List " + allElements.size());
+		
+		for(String temp : allDateElementStringList){
+		
+			if(temp.length()!=0){
+			String dateSending = (String) getCurrentDate.subSequence
+					(0, getCurrentDate.indexOf("/")+1) + temp + 
+					getCurrentDate.subSequence(getCurrentDate.lastIndexOf("/"), getCurrentDate.length());
+			System.out.println(dateSending);
+
+			driver.findElement(By.id("travelfrom")).clear();
+			driver.findElement(By.id("travelfrom")).sendKeys(dateSending);
+			Thread.sleep(1000);
+			}
+		}
+		
+		// we can send each value to the from list 
+
+		
+		
+		
+	}
+	
+	
+	
+	
 	
 	
 	
