@@ -1,0 +1,9 @@
+Emp Id :101
+Emp Name :Nithya
+Emp Sal : 20000.0
+Emp Id :102
+Emp Name :Naren
+Emp Sal : 30000.0
+Emp Id :104
+Emp Name :Hareesh
+Emp Sal : 30000.0
