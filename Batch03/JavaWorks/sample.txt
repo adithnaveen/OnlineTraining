@@ -1,0 +1,15 @@
+Empid 102
+Emp Name harry
+Emp Email harry@gmail.com
+
+Empid 101
+Emp Name aswini
+Emp Email aswini@gmail.com
+
+Empid 101
+Emp Name kumar
+Emp Email kumar@gmail.com
+
+Empid 104
+Emp Name kanchan
+Emp Email kanchan@gmail.com
