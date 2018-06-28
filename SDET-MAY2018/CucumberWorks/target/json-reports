@@ -1,0 +1,244 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "# before for only feature file"
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 316954387,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the browser is open",
+            "match": {
+              "location": "LoginStep.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 957539,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericHooks.beforeEachStep()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "",
+        "description": "",
+        "id": "login-to-web-application;",
+        "after": [
+          {
+            "result": {
+              "duration": 141948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericHooks.afterEachStep()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22105445,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user given valid user name and password",
+            "match": {
+              "location": "LoginStep.user_given_valid_user_name_and_password(LoginBean\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "krishna",
+                  "secet"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "ravi",
+                  "hello123"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "adithya",
+                  "testing111"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101334,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "take user to home page",
+            "match": {
+              "location": "LoginStep.take_user_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "# before for only feature file"
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 101334,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the browser is open",
+            "match": {
+              "location": "LoginStep.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1307487,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericHooks.beforeEachStep()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "",
+        "description": "",
+        "id": "login-to-web-application;",
+        "after": [
+          {
+            "result": {
+              "duration": 2060309,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericHooks.afterEachStep()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 662154,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user given invalid valid user name and password",
+            "match": {
+              "location": "LoginStep.user_given_invalid_valid_user_name_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "ffff",
+                  "secet"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "ddd",
+                  "hello123"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "gggg",
+                  "testing111"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 113231,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "take user to home page",
+            "match": {
+              "location": "LoginStep.take_user_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login to web application",
+    "description": "",
+    "id": "login-to-web-application",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Sanity"
+      }
+    ]
+  }
+]
